@@ -1,0 +1,151 @@
+/* Overall settings */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.intro, .costs, .contact {
+	color: #fff;
+	height: 100vh;
+	width: 100%;
+}
+.projects{
+	min-height: 100vh;
+	width: 100%;
+	color: #fff;
+}
+
+
+/* SECTION I */
+/* Display of SECTION I */
+
+.intro{
+	background-color: #12121f;
+}
+
+/* Animated headline of first section */
+
+	
+
+	
+
+/* Animated data of first section */
+
+
+
+/* SECTION II */
+/* Display of SECTION II */
+.projects{
+	background-color: #21212f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column
+}
+
+/* SECTION II heading text */
+
+
+
+/* Display of car posts */
+
+.projects-container{
+	max-width: 1200px;
+	display: grid;
+	gap: 10px;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	padding: 10px;
+	background-color: #fff2;
+	border-radius: 20px;
+}
+
+
+
+.projects-title{
+	grid-column: 1/2;
+	justify-self: center;
+	align-self: center;
+}
+
+.front-img-box{
+	grid-row: 2/3;
+	justify-self: center;
+}
+
+.front-img{
+	border-radius: 50%;
+}
+
+/* Display of see more btn */
+
+.btn{
+	background-color: #fff4;
+	margin-bottom: 20px;
+}
+
+.projects > a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* SECTION III */
+/* Display of SECTION III */
+
+.costs{
+	background-color: #41212f;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.costs-container {
+	display: flex;
+	justify-content: center;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	max-width: 1200px;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
+.cost-card{
+	margin-top: 10%;
+}
+
+.cost-card ul{
+	max-width: 300px;
+}
+
+.cost-title{
+	display: flex;
+	justify-content: start;
+	margin-bottom: 10%;
+}
+.cost-points{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 340px;
+}
+.cost-points li{
+	margin-bottom: 10px;
+}
+
+
+
+/* SECTION IV */
+/* Display of SECTION IV */
+
+.contact{
+	background-color: #12121f;
+}
