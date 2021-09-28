@@ -1,151 +1,148 @@
-/* Overall settings */
-
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	list-style-type: none;
 }
 
-.intro, .costs, .contact {
+body {
+	background-color: #21212f;
 	color: #fff;
-	height: 100vh;
-	width: 100%;
-}
-.projects{
-	min-height: 100vh;
-	width: 100%;
-	color: #fff;
+	line-height: 1;
+	font-family: sans-serif;
 }
 
+/* wyświetlanie sekcji */
 
-/* SECTION I */
-/* Display of SECTION I */
+section{
+	margin: 1em;
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* IS intro section */
 
 .intro{
-	background-color: #12121f;
-}
-
-/* Animated headline of first section */
-
-	
-
-	
-
-/* Animated data of first section */
-
-
-
-/* SECTION II */
-/* Display of SECTION II */
-.projects{
-	background-color: #21212f;
+	height: 100vh;
+	background-color: #fff;
+	color: #21212f;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column
+	overflow: hidden;
+
 }
 
-/* SECTION II heading text */
+.intro > img {
+	width: 70%;
+}
 
 
+/* PS project section */
 
-/* Display of car posts */
-
-.projects-container{
-	max-width: 1200px;
-	display: grid;
-	gap: 10px;
-	grid-template-rows: auto;
-	grid-template-columns: auto;
+.projects{
+	min-height: 100vh;
+	background-color: #32121f;
+	padding: 2em;
+	display: flex;
 	justify-content: center;
-	flex-direction: column;
 	align-items: center;
-	margin: 20px;
-	padding: 10px;
-	background-color: #fff2;
-	border-radius: 20px;
+	
 }
 
-
-
-.projects-title{
-	grid-column: 1/2;
+.small{
+	gap: .5em;
+	display: grid;
+	grid-template-columns: 750px 350px 350px ;
+	grid-template-rows: 375px 375px;
+	gap: 25px;
 	justify-self: center;
 	align-self: center;
 }
 
-.front-img-box{
-	grid-row: 2/3;
-	justify-self: center;
-}
-
 .front-img{
-	border-radius: 50%;
+	border-radius: 20px;
+	/* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
 }
 
-/* Display of see more btn */
-
-.btn{
-	background-color: #fff4;
-	margin-bottom: 20px;
+.main-photo{
+	grid-row: 1/3;
+	grid-column: 1/2;
 }
 
-.projects > a {
-	text-decoration: none;
-	color: #fff;
+.href-projects {
+	grid-column: 3/4;
 }
 
-/* SECTION III */
-/* Display of SECTION III */
-
-.costs{
-	background-color: #41212f;
+.small > div {
 	display: flex;
 	justify-content: center;
-}
-
-
-
-.costs-container {
-	display: flex;
-	justify-content: center;
-	justify-content: start;
 	align-items: center;
-	flex-direction: column;
-	max-width: 1200px;
-	background-color: black;
-	width: 100%;
-	height: 100%;
+}
+
+.small > div > h2 {
+	font-size: 5rem;
+}
+
+.href-projects > a {
+	font-size: 1.25rem;	
+}	
+
+.href-projects{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* PS btn animation */
+
+.archive-btn {
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.125rem;
+	padding: .5em;
+	display: inline-block;
+	margin-bottom: 2em;
+	position: relative;
+	z-index: 0
+}
+
+.archive-btn::after {
+	content: "";
+	position: absolute;
+	background: grey;
+	height: .85em;
+	width: 75%;
+	left: 0;
+	top: 50%;
+	z-index: -1;
+	transition: transform 175ms cubic-bezier(0.9, 0, 0.55, 1.65);
+	transform-origin: bottom left;
+}
+
+.archive-btn:hover::after,
+.archive-btn:focus::after {
+	transform: scale(1.35, 1.85);
+}
+
+/* IS info section */
+
+.info{
+	margin: 1em;
 }
 
 .cost-card{
-	margin-top: 10%;
+	margin: 1em 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.cost-card ul{
-	max-width: 300px;
-}
-
-.cost-title{
+.costs-container{
+	overflow: hidden;
 	display: flex;
-	justify-content: start;
-	margin-bottom: 10%;
-}
-.cost-points{
-	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	max-width: 340px;
-}
-.cost-points li{
-	margin-bottom: 10px;
-}
-
-
-
-/* SECTION IV */
-/* Display of SECTION IV */
-
-.contact{
-	background-color: #12121f;
+	flex-direction: column;
 }
