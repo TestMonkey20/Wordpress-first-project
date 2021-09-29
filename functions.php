@@ -9,7 +9,7 @@ function load_css(){
 	'all');
 	wp_enqueue_style('archive');
 
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&display=swap', false );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Heebo&display=swap', false );
 }
 add_action('wp_enqueue_scripts', 'load_css');
 

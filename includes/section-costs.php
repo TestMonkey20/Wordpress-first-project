@@ -14,7 +14,7 @@
 
 			<div class="cost-card">
 				<div class="cost-title">
-					<h1><?php the_title();?> </h1>
+					<h2><?php the_title();?> </h2>
 				</div>
 					<ul>
 						<?php if( get_field('pin_1') ): ?>

@@ -11,23 +11,20 @@ get_header(); ?>
 
 	<section class="projects">	
 
-		<div class="small">
+		<div class="small small-center">
 			<?php get_template_part('includes/section','recentproject');?>
 			<?php get_template_part('includes/section','projectsdisplay');?>
-			<div>
+			<div class="small-center">
 				<h2>Oto nasze projekty</h2>
 			</div>
 			<div class="href-projects">
 				<a href="http://detailing.test/category/Realizacje/" class="archive-btn">Sprawdź wszystkie nasze realizacje</a>
 			</div>
 		</div>
-
-			
-
 	</section>
 
 
-
+	
 	<section class="info">
 		<div class="costs-container">
 			<?php get_template_part('includes/section','costs');?>			

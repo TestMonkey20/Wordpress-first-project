@@ -18,7 +18,7 @@ section{
 	margin: 1em;
 	margin: 0;
 	padding: 0;
-	
+	font-family: 'Heebo', sans-serif;
 }
 
 /* IS intro section */
@@ -43,12 +43,12 @@ section{
 
 .projects{
 	min-height: 100vh;
-	background-color: #32121f;
+	background-color: rgba(255, 255, 255, 0.705);
 	padding: 2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+	max-width: 100%;
 }
 
 .small{
@@ -75,7 +75,7 @@ section{
 	grid-column: 3/4;
 }
 
-.small > div {
+.small > .small-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -89,10 +89,11 @@ section{
 	font-size: 1.25rem;	
 }	
 
-.href-projects{
+.href-projects {
+	grid-column: 1/2;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: start;
+	align-items: flex-start;
 }
 
 /* PS btn animation */
@@ -130,19 +131,34 @@ section{
 /* IS info section */
 
 .info{
-	margin: 1em;
+	padding: 1em;
+	height: 100vh;
 }
 
 .cost-card{
-	margin: 1em 0;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.costs-container{
-	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.cost-card > ul {
+	margin-top: 1em;
+}
+
+.cost-card > ul > li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: .5em 0;
+}
+
+.cost-title > h2::before {
+	content: '';
+	border-radius: 0 0 20px 20px;
+	background: rgb(122, 4, 4);
+	display: block;
+	width: 60%;
+	height: 10px;
+	transform: translateY(350%);
 }
